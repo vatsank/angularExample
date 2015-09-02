@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Using Directives</title>
+<script type="text/javascript" src="js/angular.js"></script>
+<script type="text/javascript" src="Scripts/Ng_Repeat_Example.js"></script>
+<link href="CSS/Style.css" rel="stylesheet">
+</head>
+<body ng-app="RepeatExample" ng-controller="itemsController">
+
+<table>
+
+ <tr>
+   <th>Item Number</th>
+   <th>Particular</th>
+   <th>Rate per Unit</th>
+  </tr>
+ 
+ <tr ng-repeat="item in viewModel">
+
+   <td>
+   <span ng-bind="item.itemNumber"> </span>
+   </td>
+   <td><span ng-bind="item.itemName"></span></td>
+   <td><span ng-bind="item.price"></span></td>
+     
+   
+ </tr>
+
+</table>
+
+
+ 
+</body>
+</html>

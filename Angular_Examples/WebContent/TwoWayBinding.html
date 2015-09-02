@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Two Way Binding</title>
+<script type="text/javascript" src="js/angular.js"></script>
+<script type="text/javascript" src="Scripts/Ng_Example2.js"></script>
+
+<link href="CSS/Style.css" rel="stylesheet"> 
+</head>
+<body ng-app="currencyConverter">
+<h1> Currency Converter</h1>
+<div  ng-controller="ConverterController">
+
+  <table>
+     
+     <tr>
+       <td><label>Indian Rupees</label></td>
+       <td><input type="text" ng-model="viewModel.inr" 
+                    name="inr" ng-change="convert()"></td>
+     </tr>
+     
+
+    <tr>
+       <td>Conversion Rate</td>
+       <td><input type="text" ng-model="viewModel.convRate" 
+                    name="convRate"></td>
+     </tr>
+
+
+<tr>
+       <td>US Dollar</td>
+       <td><input type="text" ng-model="viewModel.usd" 
+           name="usd"></td>
+     </tr>
+     
+  </table>
+
+</div>
+
+</body>
+</html>

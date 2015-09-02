@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Using Directives</title>
+<script type="text/javascript" src="js/angular.js"></script>
+<script type="text/javascript" src="Scripts/Ng_Repeat_Example.js"></script>
+<link href="CSS/Style.css" rel="stylesheet">
+</head>
+<body ng-app="RepeatExample" ng-controller="itemsController">
+
+
+<label>Filter</label>
+<input type="text" name="srchString" ng-model="srchString">
+<table>
+
+ <tr>
+   <th>Item Number</th>
+   <th>Particular</th>
+   <th>Rate per Unit</th>
+  </tr>
+ 
+ <tr ng-repeat="item in viewModel |filter:srchString">
+
+   <td>
+   <span ng-bind="item.itemNumber"> </span>
+   </td>
+   <td><span ng-bind="item.itemName|uppercase"></span></td>
+   <td><span ng-bind="item.price|currency:'INR.'"></span></td>
+     
+   
+ </tr>
+
+</table>
+
+
+ 
+</body>
+</html>

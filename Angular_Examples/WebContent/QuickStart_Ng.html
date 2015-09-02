@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>My First Angular Example</title>
+<script type="text/javascript" src="js/angular.js"></script>
+<script type="text/javascript" src="Scripts/Ng_Example1.js"></script>
+<link href="CSS/Style.css" rel="stylesheet">
+</head>
+
+<body ng-app="first" ng-controller="myFirstController">
+
+  <h1>{{"Hello"+"World"}}</h1>
+
+
+<div>
+
+<h1>{{product.title}}</h1>
+</div>
+ 
+<div>
+<img src={{product.image}} id="img1">
+</div>
+<div>
+<h4>Price INR:<label ng-bind="product.price"></label></h4>
+</div>
+
+</body>
+</html>

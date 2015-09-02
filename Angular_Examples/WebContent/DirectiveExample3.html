@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Hide and Show Directive</title>
+<script type="text/javascript" src="js/angular.js"></script>
+<script type="text/javascript" src="Scripts/Show_Hide.js"></script>
+</head>
+<body ng-app="show" ng-controller="itemsController">
+
+<div>First Paragraph ,First Paragraph,First Paragraph
+   First Paragraph,First Paragraph</div>
+<a href="#" ng-click="more()" ng-show="show">More</a>
+
+<div ng-hide="hide">
+Second Paragraph ,Second Paragraph ,Second Paragraph ,Second Paragraph ,
+</div>
+
+<a href="#" ng-click="less()" ng-hide="hide">Less</a>
+
+
+</body>
+</html>
